@@ -9,8 +9,11 @@ Perl scripts to trim the Copepod, Insect, or Mollusc primer and spacer regions f
 
 
 Which script to use is based on the primerset used for metabarcoding:
+
 Copepod 16S (Clarke et al., 2017) – CopTrimSpacePrimer.pl
+
 Insect 16S (Epp et al., 2012) – InsTrimSpacePrimer.pl
+
 Mollusk 16S (Klymus et al., 2017) – MolTrimSpacePrimer.pl
 
 ***TrimSpacePrimer*** identifies which spacer region was used for each sample by counting the times each spacer appears within reads for each sample, and the spacer with the highest occurrence is considered the used spacer (see Klymus et al., 2017). Any sequences without the considered appropriate spacer region are removed from the dataset, which allows the removal of index hops! 
